@@ -9,3 +9,14 @@
 #
 # > 120
 #
+
+def factorial(number)
+range = (1..number).to_a
+multiply = 1
+ range.each do |num|
+ multiply *= num
+end
+p multiply
+end
+
+factorial(5)

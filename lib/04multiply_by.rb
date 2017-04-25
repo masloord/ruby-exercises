@@ -9,3 +9,11 @@
 # > 5
 # > 10
 # > 15
+
+def multiply_by(array , number)
+  arr = array.map do |num|
+    num * number
+  end
+  p arr
+end
+multiply_by([1, 2, 3], 5)

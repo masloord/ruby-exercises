@@ -6,3 +6,10 @@
 # letter_count('banana')
 #
 # > {"b" => 1, "a" => 3, "n" => 2}
+
+def letter_count(word)
+arr =  word.split('')
+p arr.each_with_object(Hash.new(0)) { |letter, counts| counts[letter] += 1}
+end
+
+letter_count('banana')
